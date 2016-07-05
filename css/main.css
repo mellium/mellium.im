@@ -1,0 +1,147 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.navbar {
+	margin: 0;
+}
+
+.navbar-header {
+	height: 75px;
+}
+
+.navbar a {
+	margin-right: 1em;
+}
+
+.navbar-brand img {
+	margin-left: 2em;
+}
+
+.navbar-text a {
+	margin-right: 2em;
+	margin-left: 1em;
+}
+
+.row {
+	margin: 0 !important;
+}
+
+.row {
+	position: relative;
+	padding: 3em 2em;
+}
+
+.row video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.row:nth-child(1) .content {
+	position: absolute;
+	top: 200pX;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.row:nth-child(1) {
+	text-align: center;
+	padding: 8em 2em;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	height: 500px;
+	overflow: hidden;
+
+	background: url('/img/conversations.jpg');
+	background-size: cover;
+	background-position: 0 75%;
+	text-shadow: 0 0 10px #333;
+}
+
+#register {
+	margin-top: 1em;
+}
+
+.row:nth-child(1) p:nth-child(1) {
+	font-size: 3em;
+}
+
+.row:nth-child(1) p:nth-child(2) {
+	font-size: 2em;
+}
+
+.row:nth-child(2) {
+	font-size: 1.5em;
+	height: 220px;
+	overflow: hidden;
+}
+
+h1 {
+	color: #668000;
+}
+
+.row:nth-child(3) {
+	background-color: #67AB49;
+}
+
+.row:nth-child(3) .col-sm-1 {
+	text-align: center;
+	color: white;
+}
+
+.row:nth-child(3) .col-sm-1 .content p {
+	margin-top: 0.5em;
+	font-size: 1.5em;
+}
+
+.row:nth-child(3) .col-sm-1 .content a {
+	font-size: 2em;
+	color: white;
+}
+
+.row:nth-child(3) .col-sm-1 .content a:hover {
+	text-decoration: none;
+}
+
+.row:nth-child(4) {
+	background: url('/img/conversations_picture.jpg');
+	background-size: cover;
+	background-position: 0 75%;
+	text-shadow: 0 0 10px #333;
+	height: 500px;
+	overflow: hidden;
+	color: white;
+	text-align: center;
+}
+
+.row:nth-child(4) .content {
+	position: relative;
+	top: 150px;
+}
+
+.row:nth-child(4) p:nth-child(1) {
+	font-size: 3em;
+	font-family: 'Raleway', sans-serif;
+}
+
+.row:nth-child(4) p:nth-child(2) {
+	font-size: 2em;
+}
+
+#xmpp {
+	width: 50%;
+}
+
+footer {
+	font-size: small;
+	padding-left: 2em;
+	padding-bottom: 1em;
+}
