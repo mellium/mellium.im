@@ -2,6 +2,7 @@
 <head>
 	<title>Mellium Webchat</title>
 	<link rel="stylesheet" href="webchat.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 	<link rel="icon" href="/favicon.png" type="image/png" />
 	
 	<script type="text/javascript" src="strophe/b64.js"></script>
@@ -169,8 +170,13 @@
 	</header>
 	<div id="nickchoose">
 		<div id="nickentryline">
-			<p>Enter a name or just click <b>Enter</b> to join the chatroom</p>
-			<p>Nickname: <input id="nickentry" type="text" value="" />&nbsp;<input style="font-weight:bold;" type="submit" value="Enter" onclick='nickname_entered()' /></p>
+			<div class="form-inline">
+				<label for="nickentry">Nickname</label>
+				<input id="nickentry" type="text" value="" placeholder="Nickname" aria-describedby="helpBlock"/>
+				<input style="font-weight:bold;" type="submit" class="btn btn-primary" value="Enter" onclick='nickname_entered()' /></p>
+				<span id="helpBlock" class="help-block">Enter a name or just click <b>Enter</b> to join the chatroom</span>
+			<p></p>
+			</div>
 		</div>
 	</div>
 
