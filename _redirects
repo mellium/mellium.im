@@ -1,2 +1,4 @@
 # Redirect default Netlify subdomain to primary domain
 https://mellium-im.netlify.com/* https://mellium.im/:splat 301!
+https://mellium.im/design/* https://github.com/mellium/xmpp/blob/master/design/:splat.md 302!
+https://mellium.im/issue/* https://github.com/mellium/xmpp/issues/:splat 302!
