@@ -1,0 +1,10 @@
+{{- $u := urls.Parse .Permalink }}
+
+{{- with $import := path.Join $u.Host $u.Path }}
+<a href="{{ $u.Scheme }}://{{ $u.Host }}">{{ $u.Host }}</a>
+{{- $curPath := "" }}
+{{- range split $u.Path "/" }}
+{{- $curPath = path.Join $curPath . -}}
+{{- if . }} / <a href="{{ $u.Scheme }}://{{ $u.Host }}/{{ $curPath }}">{{ . }}</a>{{ end }}
+{{- end }}
+{{- end }}

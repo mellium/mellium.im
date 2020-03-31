@@ -1,0 +1,14 @@
+<nav>
+	{{- $u := urls.Parse .Permalink }}
+	{{- with $import := path.Join $u.Host $u.Path }}
+	{{- if not $.Params.nodocs }}
+	<a href="https://pkg.go.dev/{{ . }}"><img src="{{ absURL "status.svg" }}" alt="GoDoc"/></a>
+	{{- end }}
+	{{- with $r := or $.FirstSection.Params.Repo $.Params.Repo }}
+	<a href="{{ $r }}"><img src="{{ absURL "repo.svg" }}" alt="Repo"/></a>
+	{{- end }}
+	{{- with $r := or $.FirstSection.Params.Todo $.Params.Todo }}
+	<a href="{{ $r }}"><img src="{{ absURL "todo.svg" }}" alt="Issue Tracker"/></a>
+	{{- end }}
+	{{- end }}
+</nav>

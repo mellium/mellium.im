@@ -1,0 +1,8 @@
+{{- $u := urls.Parse .Permalink }}
+{{- with $r := or $.FirstSection.Params.Repo $.Params.Repo }}
+{{- with $path := split $u.Path "/" }}
+{{- with $import := path.Join $u.Host (index $path 1) }}
+<meta name="go-import" content="{{ $import }} git {{ $r }}"/>
+{{- end }}
+{{- end }}
+{{- end }}

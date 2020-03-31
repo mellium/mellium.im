@@ -1,0 +1,11 @@
+name        = "modules"
+license     = "BSD"
+licenselink = "https://git.sr.ht/~samwhited/code.soquee.net/blob/master/LICENSE"
+description = "A theme for creating vanity imports for Go Modules."
+homepage    = "https://git.sr.ht/~samwhited/code.soquee.net"
+tags        = ["golang", "go modules"]
+min_version = 0.54
+
+[author]
+  name     = "Soquee"
+  homepage = "https://code.soquee.net"

@@ -1,0 +1,22 @@
+{{- range $.Pages.GroupByParam "category" }}
+<table style="margin-left: 1rem">
+	<thead style="text-align: left">
+		<tr>
+			<th>{{ if .Key }}{{ .Key }}{{ else }}Modules{{ end }}</th>
+			<th>Synopsis</th>
+		</tr>
+	</thead>
+	<tbody>
+	{{- range .Pages }}
+	<tr>
+	{{- with $u := urls.Parse .Permalink }}
+	{{- with $import := path.Join $u.Host $u.Path }}
+	<td><a href="{{ $u }}">{{ $import }}</a></td>
+	{{- end }}
+	{{- end }}
+	<td>{{ .Summary }}</td>
+	</tr>
+	{{- end }}
+	<tbody>
+</table>
+{{- end }}
