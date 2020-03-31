@@ -1,12 +1,19 @@
-{{- range $.Pages.GroupByParam "category" }}
 <table style="margin-left: 1rem">
 	<thead style="text-align: left">
 		<tr>
-			<th>{{ if .Key }}{{ .Key }}{{ else }}Modules{{ end }}</th>
+			<th>Module</th>
 			<th>Synopsis</th>
 		</tr>
 	</thead>
+{{- range $.Pages.GroupByParam "category" }}
 	<tbody>
+	{{ if .Key }}
+	<tr>
+		<td colspan="2">
+			<h4>{{ .Key }}</h4>
+		</td>
+	</tr>
+	{{- end }}
 	{{- range .Pages }}
 	<tr>
 	{{- with $u := urls.Parse .Permalink }}
@@ -18,5 +25,5 @@
 	</tr>
 	{{- end }}
 	<tbody>
-</table>
 {{- end }}
+</table>
