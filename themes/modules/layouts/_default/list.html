@@ -1,7 +1,9 @@
 {{- define "main" }}
 {{ .Content }}
 
-<p>Subpackages:</p>
+{{ if gt (len $.Pages) 0 }}
+<h3>Packages</h3>
+{{- partial "list.html" . }}
+{{- end }}
 
-	{{- partial "list.html" . }}
 {{- end }}
