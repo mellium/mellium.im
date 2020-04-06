@@ -1,0 +1,24 @@
+image: alpine/edge
+packages:
+  - hugo
+  - zip
+secrets:
+  - 8d37edda-226f-46de-b76f-16c143013d95
+  - eb7e7bca-1f38-4044-9bfc-3d568ef027dc
+sources:
+  - https://github.com/mellium/mellium.im
+triggers:
+  - action: email
+    condition: failure
+    to: "sam@mellium.im"
+tasks:
+  - build: |
+      cd mellium.im/
+      hugo version
+      hugo
+  - deploy: |
+      cd mellium.im/public
+      zip -r deploy.zip ./*
+      curl -H "@$HOME/.netlifydeployheaders" \
+           --data-binary "@deploy.zip" \
+           https://api.netlify.com/api/v1/sites/mellium.im/deploys
