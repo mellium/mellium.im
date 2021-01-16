@@ -1,3 +1,4 @@
+{{- if not $.Params.nobadges }}
 <nav>
 	{{- $u := urls.Parse .Permalink }}
 	{{- with $import := path.Join $u.Host $u.Path }}
@@ -12,3 +13,4 @@
 	{{- end }}
 	{{- end }}
 </nav>
+{{- end }}
