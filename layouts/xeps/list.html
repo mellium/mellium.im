@@ -1,0 +1,35 @@
+{{ define "main" }}
+  <h1>XEPs</h1>
+  {{ .Content }}
+
+  {{- $pages := (.Site.GetPage "xmpp").Sections -}}
+  {{- $pages = $pages | append (.Site.GetPage "xmpp") -}}
+
+  <table>
+    <th>RFC</th>
+    <th>Package</th>
+  {{- range where $pages "Params.implements" "!=" nil}}
+  {{- $page := . }}
+  {{- range .Params.implements }}
+    <tr>
+      <td><a href="{{ . }}">{{ path.Base . | upper }}</a></td>
+      <td><a href="{{ $page.Permalink }}">{{ path.Base $page.File.Dir }}</a></td>
+    </tr>
+  {{- end }}
+  {{- end }}
+  </table>
+
+  <table>
+    <th>XEP</th>
+    <th>Package</th>
+  {{- range where $pages "Params.xeps" "!=" nil}}
+  {{- $page := . }}
+  {{- range .Params.xeps }}
+    <tr>
+      <td><a href="{{ .resource }}">{{ path.Base .resource | strings.TrimSuffix ".html" | upper}}</a></td>
+      <td><a href="{{ $page.Permalink }}">{{ path.Base $page.File.Dir }}</a></td>
+    </tr>
+  {{- end }}
+  {{- end }}
+  </table>
+{{ end }}
