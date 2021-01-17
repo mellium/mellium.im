@@ -1,6 +1,14 @@
 {{- if or (gt (len (where .pages "Params.implements" "!=" nil)) 0) (gt (len (where .pages "Params.xeps" "!=" nil)) 0) }}
 <h3>Specs</h3>
 
+{{- if not (isset $ "package") }}
+<p>
+The following specifications are implemented by this package.
+For a full list of all specs implemented in the <code>xmpp</code> module see
+<a href="/docs/xeps"><code>docs/xeps</code></a>.
+</p>
+{{- end }}
+
 <table>
 {{- range $idx, $el := (where .pages "Params.implements" "!=" nil) }}
 {{- if eq $idx 0 }}
