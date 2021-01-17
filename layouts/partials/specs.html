@@ -1,0 +1,43 @@
+{{- if or (gt (len (where .pages "Params.implements" "!=" nil)) 0) (gt (len (where .pages "Params.xeps" "!=" nil)) 0) }}
+<h3>Specs</h3>
+
+<table>
+{{- range $idx, $el := (where .pages "Params.implements" "!=" nil) }}
+{{- if eq $idx 0 }}
+  <th>RFC</th>
+  {{- if isset $ "package" }}
+  <th>Package</th>
+  {{- end }}
+{{- end }}
+{{- $page := . }}
+{{- range .Params.implements }}
+  <tr>
+    <td><a href="{{ . }}">{{ path.Base . | upper }}</a></td>
+    {{- if isset $ "package" }}
+    <td><a href="{{ $page.Permalink }}">{{ path.Base $page.File.Dir }}</a></td>
+    {{- end }}
+  </tr>
+{{- end }}
+{{- end }}
+</table>
+
+<table>
+{{- range $idx, $el := (where .pages "Params.xeps" "!=" nil) }}
+{{- if eq $idx 0 }}
+  <th>XEP</th>
+  {{- if isset $ "package" }}
+  <th>Package</th>
+  {{- end }}
+{{- end }}
+{{- $page := . }}
+{{- range .Params.xeps }}
+  <tr>
+    <td><a href="{{ .resource }}">{{ path.Base .resource | strings.TrimSuffix ".html" | upper}}</a></td>
+    {{- if isset $ "package" }}
+    <td><a href="{{ $page.Permalink }}">{{ path.Base $page.File.Dir }}</a></td>
+    {{- end }}
+  </tr>
+{{- end }}
+{{- end }}
+</table>
+{{- end }}

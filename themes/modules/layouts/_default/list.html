@@ -1,6 +1,8 @@
 {{- define "main" }}
 {{ .Content }}
 
+{{- partial "specs.html" (dict "page" .Page "pages" (slice .Page)) }}
+
 {{ if gt (len $.Pages) 0 }}
 <h3>Packages</h3>
 {{- partial "list.html" . }}
