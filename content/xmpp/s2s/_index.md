@@ -1,6 +1,10 @@
 +++
 category = ""
 
+implements = [
+  "https://tools.ietf.org/html/rfc4422#appendix-A"
+]
+
 [[xeps]]
   resource = "https://xmpp.org/extensions/xep-0178.html"
   status   = "complete"
