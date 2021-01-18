@@ -19,8 +19,10 @@ For a full list of all specs implemented in the <code>xmpp</code> module see
 {{- end }}
 {{- $page := . }}
 {{- range .Params.implements }}
+  {{- $u := urls.Parse . }}
   <tr>
-    <td><a href="{{ . }}">{{ path.Base . | upper }}</a></td>
+		<td><a href="{{ . }}">{{ path.Base $u.Path | upper }}
+				{{ if $u.Fragment }}{{ strings.Replace $u.Fragment "-" " " | title }}{{ end }}</a></td>
     {{- if isset $ "package" }}
     <td><a href="{{ $page.Permalink }}">{{ path.Base $page.File.Dir }}</a></td>
     {{- end }}
