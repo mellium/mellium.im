@@ -47,5 +47,10 @@ import (
 			{{ .Content }}
 			{{- end }}
 		</main>
+		<footer>
+		{{- block "footer" . }}
+		{{- partial "footer.html" . }}
+		{{- end }}
+		</footer>
 	</body>
 </html>
