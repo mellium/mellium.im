@@ -11,6 +11,7 @@
 	{{- with $r := or $.FirstSection.Params.Todo $.Params.Todo }}
 	<a href="{{ $r }}"><img src="{{ absURL "todo.svg" }}" alt="Issue Tracker"/></a>
 	{{- end }}
+	<a href="https://mellium.chat"><img src="https://inverse.chat/badge.svg?room=users@mellium.chat" alt="Chat Room"/></a>
 	{{- end }}
 </nav>
 {{- end }}
