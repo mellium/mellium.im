@@ -1,5 +1,6 @@
 +++
 category = ""
+summary = "Package stream implements stream level functionality."
 +++
 
 Package **`stream`** implements stream level functionality.
