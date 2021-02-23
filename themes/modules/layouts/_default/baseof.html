@@ -6,6 +6,7 @@
 		{{ .Site.Hugo.Generator }}
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta name="Description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+		<link rel="me" href="https://fosstodon.org/@mellium"/>
 		<title>
 			{{- block "title" . }}{{ .Site.Title }}{{ if and .Title (ne .Title .Site.Title) }} — {{ .Title }}{{ end }}{{ end -}}
 		</title>
