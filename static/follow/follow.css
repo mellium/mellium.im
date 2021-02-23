@@ -1,0 +1,27 @@
+#show-mastodon:not(:checked) ~ .mastodon {
+	display: none;
+}
+
+#show-twitter:not(:checked) ~ .twitter {
+	display: none;
+}
+
+#show-facebook:not(:checked) ~ .facebook {
+	display: none;
+}
+
+#show-blog:not(:checked) ~ .blog {
+	display: none;
+}
+
+#show-client:not(:checked) ~ .client {
+	display: none;
+}
+
+#show-server:not(:checked) ~ .server {
+	display: none;
+}
+
+#show-library:not(:checked) ~ .library {
+	display: none;
+}
