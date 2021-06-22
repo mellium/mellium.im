@@ -2,6 +2,10 @@
 category = ""
 
 [[xeps]]
+  resource = "https://xmpp.org/extensions/xep-0203.html"
+  status   = "complete"
+  version  = "2.0"
+[[xeps]]
   resource = "https://xmpp.org/extensions/xep-0359.html"
   status   = "complete"
   version  = "0.6.1"
