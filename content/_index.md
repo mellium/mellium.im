@@ -2,6 +2,7 @@
 name   = "Mellium"
 repo   = "https://sr.ht/~samwhited/mellium/"
 nodocs = true
+donate = "https://opencollective.com/mellium"
 +++
 
 
