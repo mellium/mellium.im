@@ -1,6 +1,6 @@
 +++
 name   = "Mellium"
-repo   = "https://sr.ht/~samwhited/mellium/"
+repo   = "https://github.com/mellium/"
 nodocs = true
 donate = "https://opencollective.com/mellium"
 +++
