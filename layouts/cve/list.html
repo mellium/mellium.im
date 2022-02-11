@@ -1,0 +1,13 @@
+{{ define "packageinfo" }}
+	<h2>Security Issues</h2>
+{{ end }}
+
+{{ define "main" }}
+	{{ .Content }}
+
+	<ul>
+	{{- range .Pages.ByTitle }}
+	<li><a href="{{.Permalink}}">{{ .Title }}</a></li>
+	{{- end }}
+	</ul>
+{{ end }}

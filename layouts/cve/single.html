@@ -1,0 +1,16 @@
+{{ define "packageinfo" }}
+	<h2>{{.Title}}</h2>
+{{ end }}
+
+{{ define "main" }}
+	<dl>
+		<dt>Affected components:</dt>
+		<dd><ul>{{ range .Params.components}}<li>{{.}}</li>{{ else }}Not specified{{end}}</ul></dd>
+		<dt>Affected versions:</dt>
+		<dd><ul>{{ range .Params.versions}}<li>{{.}}</li>{{ else }}Not specified{{ end }}</ul></dd>
+		<dt>Assigned CVE:</dt>
+		<dd>{{ if .Params.cve }}<a href="https://nvd.nist.gov/vuln/detail/{{.Params.cve}}">{{.Params.cve}}</a>{{ else }}Not yet assigned{{ end }}</dd>
+	</dl>
+
+	{{ .Content }}
+{{ end }}
