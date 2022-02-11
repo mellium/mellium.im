@@ -8,6 +8,8 @@
 		<dd><ul>{{ range .Params.components}}<li>{{.}}</li>{{ else }}Not specified{{end}}</ul></dd>
 		<dt>Affected versions:</dt>
 		<dd><ul>{{ range .Params.versions}}<li>{{.}}</li>{{ else }}Not specified{{ end }}</ul></dd>
+		<dt>Fixed in:</dt>
+		<dd><ul>{{ if .Params.fixed }}{{ .Params.fixed }}{{ else }}Unpatched{{ end }}</ul></dd>
 		<dt>Assigned CVE:</dt>
 		<dd>{{ if .Params.cve }}<a href="https://nvd.nist.gov/vuln/detail/{{.Params.cve}}">{{.Params.cve}}</a>{{ else }}Not yet assigned{{ end }}</dd>
 	</dl>
