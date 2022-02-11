@@ -29,6 +29,7 @@
 					{{- end -}}
 				</a></h1>
 			{{- if not .Params.nobreadcrumbs }}<h2>{{ partial "breadcrumbs.html" . }}</h2>{{ end}}
+			{{- block "packageinfo" . }}
 			{{- if not .IsHome }}
 			{{- partial "badges.html" $ }}
 			{{- $u := urls.Parse .Permalink }}
@@ -40,6 +41,7 @@ import (
 	"{{ $import }}"
 )
 			</code></pre>
+			{{- end }}
 			{{- end }}
 			{{- end }}
 			{{- end }}
