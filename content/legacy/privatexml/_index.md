@@ -1,6 +1,6 @@
 +++
 category = ""
-summary = "Package compress implements XML level stream compression."
+summary = "Package privatexml implements server side storage of XML documents."
 
 [[xeps]]
   resource = "https://xmpp.org/extensions/xep-0049.html"
