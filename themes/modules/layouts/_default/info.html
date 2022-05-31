@@ -1,0 +1,15 @@
+{{- define "head" -}}
+<!--
+	This block overrides the go-import meta tag since this is a project details
+	page and is not importable.
+	Do not remove it; Hugo requires content in the block to override it.
+-->
+{{- end }}
+
+{{- define "packageinfo" -}}
+<!-- remove the package info block (including badges and import help). -->
+{{- end }}
+
+{{ define "main" }}
+	{{ .Content }}
+{{ end }}
