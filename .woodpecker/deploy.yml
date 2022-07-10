@@ -8,11 +8,16 @@ pipeline:
   deploy:
     image: alpine:edge
     commands:
-      - apk add openssh rsync
-      - awk 'BEGIN{for(v in ENVIRON) print v}'
+      - apk add openssh-client rsync
+      - mkdir -p ~/.ssh
+      - echo "$DEPLOY_HOSTS" > ~/.ssh/known_hosts
+      - chmod -R 700 ~/.ssh
+      - eval $(ssh-agent -s)
+      - echo "$DEPLOY_KEY" | ssh-add -
       - cd public/
       - rsync -e "ssh -p 222" -av --delete . deploy@mellium.im:/usr/local/www/mellium.im
     when:
-      event: [deployment]
+      branch: main
+    secrets: [ deploy_key, deploy_hosts ]
 depends_on:
   - dco
