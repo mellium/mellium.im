@@ -1,0 +1,18 @@
+pipeline:
+  build:
+    image: alpine:edge
+    commands:
+      - apk add hugo
+      - hugo version
+      - hugo
+  deploy:
+    image: alpine:edge
+    commands:
+      - apk add openssh rsync
+      - awk 'BEGIN{for(v in ENVIRON) print v}'
+      - cd public/
+      - rsync -e "ssh -p 222" -av --delete . deploy@mellium.im:/usr/local/www/mellium.im
+    when:
+      event: [deployment]
+depends_on:
+  - dco
