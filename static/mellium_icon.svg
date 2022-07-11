@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="571.15436"
+   height="571.15436"
+   version="1.1"
+   viewBox="0 0 571.15434 571.15435"
+   id="svg936"
+   sodipodi:docname="mellium_icon.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs940" />
+  <sodipodi:namedview
+     id="namedview938"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="2.2810093"
+     inkscape:cx="503.72438"
+     inkscape:cy="277.28953"
+     inkscape:window-width="3836"
+     inkscape:window-height="1536"
+     inkscape:window-x="0"
+     inkscape:window-y="43"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g934"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <g
+     transform="translate(46.674576,-505.14365)"
+     id="g934">
+    <circle
+       style="fill:#fff6ac;stroke:none;fill-opacity:1"
+       id="path1228"
+       cx="238.9026"
+       cy="790.72083"
+       r="285.07718" />
+    <g
+       transform="translate(13.534599,38.236572)"
+       fill="#edd400"
+       stroke="#4a6785"
+       stroke-dashoffset="44"
+       stroke-linecap="round"
+       stroke-opacity="0.50196"
+       stroke-width="5"
+       id="g904">
+      <path
+         d="m 222.86,746.65 -117.8,32.611 -87.143,-85.714 30.659,-118.33 117.8,-32.611 87.143,85.714 z"
+         id="path898" />
+      <path
+         d="m 436.36,802.51 -117.8,32.611 -87.143,-85.714 30.659,-118.33 117.8,-32.611 87.143,85.714 z"
+         id="path900" />
+      <path
+         d="m 280.86,958.93 -117.8,32.611 -87.143,-85.714 30.659,-118.33 117.8,-32.611 87.143,85.714 z"
+         id="path902" />
+    </g>
+  </g>
+</svg>

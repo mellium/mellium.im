@@ -1,8 +1,8 @@
 +++
 title    = "clarkns"
 date     = "2020-07-05T18:26:00-04:00"
-repo     = "https://github.com/mellium/clarkns"
-todo     = "https://github.com/mellium/xmpp/issues"
+repo     = "https://mellium.im/repo/clarkns"
+todo     = "https://mellium.im/issue"
 category = "Other"
 +++
 

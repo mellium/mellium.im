@@ -1,8 +1,8 @@
 +++
 title    = "legacy"
 date     = "2022-03-17T09:00:00-04:00"
-repo     = "https://github.com/mellium/legacy"
-todo     = "https://github.com/mellium/xmpp/issues"
+repo     = "https://mellium.im/repo/legacy"
+todo     = "https://mellium.im/issue"
 category = "Other"
 summary  = "The legacy module contains outdated XMPP functionality."
 +++

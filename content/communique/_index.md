@@ -1,8 +1,8 @@
 +++
 title    = "communiqué"
 date     = "2019-05-26T12:08:30-05:00"
-repo     = "https://github.com/mellium/communique-tui"
-todo     = "https://github.com/mellium/xmpp/issues"
+repo     = "https://mellium.im/repo/communique-tui"
+todo     = "https://mellium.im/issue"
 category = "Tools"
 +++
 

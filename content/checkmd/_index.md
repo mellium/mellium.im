@@ -1,8 +1,8 @@
 +++
 title    = "checkmd"
 date     = "2020-05-14T15:15:42-04:00"
-repo     = "https://git.sr.ht/~samwhited/checkmd"
-todo     = "https://github.com/mellium/xmpp/issues"
+repo     = "https://mellium.im/repo/checkmd"
+todo     = "https://mellium.im/issue"
 category = "Tools"
 summary  = "The checkmd command checks Markdown files for common problems."
 +++

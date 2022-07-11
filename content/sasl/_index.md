@@ -1,8 +1,8 @@
 +++
 title    = "sasl"
 date     = "2019-05-26T12:08:30-05:00"
-repo     = "https://github.com/mellium/sasl"
-todo     = "https://github.com/mellium/xmpp/issues"
+repo     = "https://mellium.im/repo/sasl"
+todo     = "https://mellium.im/issue"
 category = "Core"
 
 implements = [

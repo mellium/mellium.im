@@ -1,9 +1,9 @@
 +++
 title    = "cli"
 date     = "2019-05-26T12:08:30-05:00"
-repo     = "https://github.com/mellium/cli"
-todo     = "https://github.com/mellium/cli/issues"
+repo     = "https://mellium.im/repo/issue"
+todo     = "https://mellium.im/issue"
 category = "Other"
 +++
 
-A libray for writing command line interfaces in the style of git or apt.
+A library for writing command line interfaces in the style of git or apt.

@@ -11,6 +11,6 @@ tree or on [pkg.go.dev].
 If you are looking for a list of XEPs and RFCs supported by this project it can
 be found on the [XEPs page].
 
-[`docs/`]: https://github.com/mellium/xmpp/tree/master/docs
+[`docs/`]: https://mellium.im/docs
 [pkg.go.dev]: https://pkg.go.dev/mellium.im/xmpp
 [XEPs page]: /docs/xeps
