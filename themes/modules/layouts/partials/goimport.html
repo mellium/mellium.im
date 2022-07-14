@@ -1,8 +1,8 @@
 {{- $u := urls.Parse .Permalink }}
-{{- with $r := or $.FirstSection.Params.Repo $.Params.Repo }}
+{{- with $r := or $.FirstSection.Params.title $.Params.title }}
 {{- with $path := split $u.Path "/" }}
 {{- with $import := path.Join $u.Host (index $path 1) }}
-<meta name="go-import" content="{{ $import }} git {{ $r }}"/>
+<meta name="go-import" content="{{ $import }} git https://codeberg.org/mellium/{{ $r }}"/>
 {{- end }}
 {{- end }}
 {{- end }}

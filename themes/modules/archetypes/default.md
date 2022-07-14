@@ -1,7 +1,7 @@
 +++
 title    = "{{ .Name }}"
 date     = "{{ .Date }}"
-repo     = "https://git.sr.ht/~myname/{{ .Name }}"
-todo     = "https://todo.sr.ht/~myname/{{ .Name }}"
+repo     = "https://codegerg.org/mellium/{{ .Name }}"
+todo     = "https://mellium.im/issue"
 category = ""
 +++
