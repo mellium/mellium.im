@@ -3,7 +3,7 @@ title    = "blogsync"
 date     = "2019-05-26T12:08:30-05:00"
 repo     = "https://git.sr.ht/~samwhited/blogsync"
 todo     = "https://todo.sr.ht/~samwhited/blogsync"
-category = "Tools"
+category = "Unmaintained"
 summary = "The blogsync command is a tool for importing and exporting blog posts between Markdown files and write.as."
 +++
 

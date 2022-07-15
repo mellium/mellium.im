@@ -3,7 +3,7 @@ title    = "verbmux"
 date     = "2019-05-26T12:08:30-05:00"
 repo     = "https://mellium.im/repo/verbmux"
 todo     = "https://mellium.im/issue"
-category = "Other"
+category = "Unmaintained"
 summary  = "Package verbmux is an HTTP multiplexer that handles by method."
 +++
 
