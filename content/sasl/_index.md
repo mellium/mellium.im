@@ -6,14 +6,15 @@ todo     = "https://mellium.im/issue"
 category = "Core"
 
 implements = [
-  "https://tools.ietf.org/html/rfc4422",
-  "https://tools.ietf.org/html/rfc4616",
-  "https://tools.ietf.org/html/rfc5802",
-  "https://tools.ietf.org/html/rfc7677",
+  "https://www.rfc-editor.org/rfc/rfc4422",
+  "https://www.rfc-editor.org/rfc/rfc4616",
+  "https://www.rfc-editor.org/rfc/rfc5802",
+  "https://www.rfc-editor.org/rfc/rfc7677",
+  "https://www.rfc-editor.org/rfc/rfc9266",
 ]
 +++
 
 Package **`sasl`** implements the Simple Authentication and Security Layer
 (SASL) as defined by [RFC 4422].
 
-[RFC 4422]: http://tools.ietf.org/html/rfc4422
+[RFC 4422]: https://www.rfc-editor.org/rfc/rfc4422

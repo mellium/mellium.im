@@ -2,7 +2,7 @@
 category = ""
 
 implements = [
-  "https://tools.ietf.org/html/rfc5122",
+  "https://www.rfc-editor.org/rfc/rfc5122",
 ]
 +++
 

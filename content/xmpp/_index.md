@@ -6,9 +6,9 @@ todo     = "https://mellium.im/issue"
 category = "Core"
 
 implements = [
-  "https://tools.ietf.org/html/rfc6120",
-  "https://tools.ietf.org/html/rfc6121",
-  "https://tools.ietf.org/html/rfc7590",
+  "https://www.rfc-editor.org/rfc/rfc6120",
+  "https://www.rfc-editor.org/rfc/rfc6121",
+  "https://www.rfc-editor.org/rfc/rfc7590",
 ]
 +++
 

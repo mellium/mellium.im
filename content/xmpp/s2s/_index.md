@@ -2,7 +2,7 @@
 category = ""
 
 implements = [
-  "https://tools.ietf.org/html/rfc4422#appendix-A"
+  "https://www.rfc-editor.org/rfc/rfc4422#appendix-A"
 ]
 
 [[xeps]]
